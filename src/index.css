@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom markdown styles */
+.markdown-content h1, 
+.markdown-content h2, 
+.markdown-content h3, 
+.markdown-content h4 {
+  @apply text-indigo-300 border-b border-gray-600 pb-2 mt-6 mb-4;
+}
+
+.dark .markdown-content h1, 
+.dark .markdown-content h2, 
+.dark .markdown-content h3, 
+.dark .markdown-content h4 {
+  @apply border-gray-600;
+}
+
+.light .markdown-content h1, 
+.light .markdown-content h2, 
+.light .markdown-content h3, 
+.light .markdown-content h4 {
+  @apply text-indigo-700 border-gray-300;
+}
+
+.markdown-content h1 { @apply text-3xl font-bold; }
+.markdown-content h2 { @apply text-2xl font-bold; }
+.markdown-content h3 { @apply text-xl font-bold; }
+.markdown-content h4 { @apply text-lg font-bold; }
+
+.markdown-content p {
+  @apply mb-4 leading-relaxed;
+}
+
+.markdown-content a {
+  @apply text-indigo-400 underline;
+}
+
+.light .markdown-content a {
+  @apply text-indigo-600;
+}
+
+.markdown-content ul, 
+.markdown-content ol {
+  @apply ml-6 mb-4;
+}
+
+.markdown-content li {
+  @apply mb-2;
+}
+
+.markdown-content ul {
+  @apply list-disc;
+}
+
+.markdown-content ol {
+  @apply list-decimal;
+}
+
+.markdown-content pre {
+  @apply bg-gray-800 p-4 rounded-lg overflow-x-auto mb-4 text-gray-200;
+}
+
+.light .markdown-content pre {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.markdown-content code {
+  @apply font-mono bg-gray-700 px-2 py-1 rounded text-sm;
+}
+
+.light .markdown-content code {
+  @apply bg-gray-200;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-indigo-600 pl-4 ml-0 text-gray-300 italic;
+}
+
+.light .markdown-content blockquote {
+  @apply border-indigo-500 text-gray-600;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse mb-4;
+}
+
+.markdown-content th, 
+.markdown-content td {
+  @apply border border-gray-600 px-4 py-2;
+}
+
+.light .markdown-content th, 
+.light .markdown-content td {
+  @apply border-gray-300;
+}
+
+.markdown-content th {
+  @apply bg-gray-700 font-bold;
+}
+
+.light .markdown-content th {
+  @apply bg-gray-100;
+}
+
+.markdown-content hr {
+  @apply border-gray-600 my-8;
+}
+
+.light .markdown-content hr {
+  @apply border-gray-300;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Final Foto Video Creation",
+  "description": "A comprehensive web application that leverages the Gemini API for a wide range of creative tasks, including text generation, image generation and editing, video creation from text or images, and text-to-speech.",
+  "requestFramePermissions": []
+}

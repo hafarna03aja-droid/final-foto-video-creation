@@ -1,0 +1,46 @@
+{
+  "name": "final-foto-video-creation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered multimedia content creation app with image, video, text, and audio generation capabilities",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hafarna/final-foto-video-creation.git"
+  },
+  "homepage": "https://github.com/hafarna/final-foto-video-creation#readme",
+  "bugs": {
+    "url": "https://github.com/hafarna/final-foto-video-creation/issues"
+  },
+  "author": "Hafarna",
+  "license": "MIT",
+  "keywords": ["ai", "image-generation", "video-creation", "text-generation", "audio-synthesis", "gemini-ai", "react", "vite", "tailwindcss"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "deploy": "npm run build && vercel --prod",
+    "deploy:check": "npm run build && npm run preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "marked": "^12.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.0",
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "terser": "^5.44.1",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
