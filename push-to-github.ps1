@@ -7,7 +7,7 @@ Write-Host ""
 
 # First, check if GitHub repository exists
 Write-Host "🔍 Checking GitHub repository..." -ForegroundColor Cyan
-$repoCheck = Invoke-WebRequest -Uri "https://api.github.com/repos/hafarna/final-foto-video-creation" -Method GET -ErrorAction SilentlyContinue
+$repoCheck = Invoke-WebRequest -Uri "https://api.github.com/repos/hafarna03aja-droid/final-foto-video-creation" -Method GET -ErrorAction SilentlyContinue
 if ($repoCheck.StatusCode -ne 200) {
     Write-Host "❌ Repository GitHub belum ada!" -ForegroundColor Red
     Write-Host ""
@@ -37,7 +37,7 @@ if (-not (Test-Path ".git")) {
 }
 
 # Check if there are commits
-$commits = git log --oneline 2>$null
+git log --oneline 2>$null | Out-Null
 if ($LASTEXITCODE -ne 0) {
     Write-Host "❌ Error: Belum ada commit!" -ForegroundColor Red
     Write-Host "   Jalankan 'git add .' dan 'git commit -m \"Initial commit\"' terlebih dahulu" -ForegroundColor Yellow
@@ -58,11 +58,11 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "✅ Remote origin sudah terkonfigurasi: $remote" -ForegroundColor Green
 } else {
     Write-Host "⚠️  Remote origin belum terkonfigurasi" -ForegroundColor Yellow
-    Write-Host "   Pastikan repository GitHub sudah dibuat di: https://github.com/hafarna/final-foto-video-creation" -ForegroundColor Cyan
+    Write-Host "   Pastikan repository GitHub sudah dibuat di: https://github.com/hafarna03aja-droid/final-foto-video-creation" -ForegroundColor Cyan
     
     $confirm = Read-Host "Apakah repository GitHub sudah dibuat? (y/N)"
     if ($confirm -eq 'y' -or $confirm -eq 'Y') {
-        git remote add origin https://github.com/hafarna/final-foto-video-creation.git
+        git remote add origin https://github.com/hafarna03aja-droid/final-foto-video-creation.git
         Write-Host "✅ Remote origin berhasil ditambahkan" -ForegroundColor Green
     } else {
         Write-Host "❌ Silakan buat repository GitHub terlebih dahulu:" -ForegroundColor Red
@@ -88,7 +88,7 @@ $pushResult = git push -u origin main 2>&1
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
     Write-Host "🎉 SUCCESS! Repository berhasil di-push ke GitHub!" -ForegroundColor Green
-    Write-Host "🔗 Repository URL: https://github.com/hafarna/final-foto-video-creation" -ForegroundColor Cyan
+    Write-Host "🔗 Repository URL: https://github.com/hafarna03aja-droid/final-foto-video-creation" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "🎯 LANGKAH SELANJUTNYA:" -ForegroundColor Yellow
     Write-Host "1. 🌐 Deploy ke Vercel:" -ForegroundColor White
