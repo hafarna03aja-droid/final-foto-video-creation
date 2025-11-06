@@ -37,7 +37,7 @@ if (-not (Test-Path ".git")) {
 }
 
 # Check if there are commits
-git log --oneline 2>$null | Out-Null
+git log --oneline -1 2>$null | Out-Null
 if ($LASTEXITCODE -ne 0) {
     Write-Host "❌ Error: Belum ada commit!" -ForegroundColor Red
     Write-Host "   Jalankan 'git add .' dan 'git commit -m \"Initial commit\"' terlebih dahulu" -ForegroundColor Yellow
