@@ -12,7 +12,7 @@
 
 *Generate stunning images, videos, text content, and audio using Google's Gemini AI*
 
-[🚀 Live Demo](https://your-app-name.vercel.app) • [📖 Documentation](./DEPLOYMENT.md) • [🐛 Report Bug](https://github.com/hafarna/final-foto-video-creation/issues)
+[🚀 Live Demo](https://your-app-name.vercel.app) • [📖 Documentation](./DEPLOYMENT.md) • [🐛 Report Bug](https://github.com/hafarna03aja-droid/final-foto-video-creation/issues)
 
 </div>
 
@@ -212,7 +212,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   
-**Made with ❤️ by [Hafarna](https://github.com/hafarna)**
+**Made with ❤️ by [Hafarna](https://github.com/hafarna03aja-droid)**
 
 If you found this project helpful, please consider giving it a ⭐️
 

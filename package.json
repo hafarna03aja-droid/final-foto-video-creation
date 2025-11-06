@@ -6,11 +6,11 @@
   "description": "AI-powered multimedia content creation app with image, video, text, and audio generation capabilities",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hafarna/final-foto-video-creation.git"
+    "url": "https://github.com/hafarna03aja-droid/final-foto-video-creation.git"
   },
-  "homepage": "https://github.com/hafarna/final-foto-video-creation#readme",
+  "homepage": "https://github.com/hafarna03aja-droid/final-foto-video-creation#readme",
   "bugs": {
-    "url": "https://github.com/hafarna/final-foto-video-creation/issues"
+    "url": "https://github.com/hafarna03aja-droid/final-foto-video-creation/issues"
   },
   "author": "Hafarna",
   "license": "MIT",
